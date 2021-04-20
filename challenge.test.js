@@ -35,6 +35,10 @@ const isSimilar = (arr) => {
     let str1 = arr[0];
     let str2 = arr[1];
     
+if (str1 === undefined || str2 === undefined) {
+    return false
+}
+
     if (str1.length !== str2.length) {
         return false;
     } else {
